@@ -1,0 +1,1 @@
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Monoton&pause=1000&background=FF141400&width=435&lines=This+Is+The+God+Of+Mischief+%7C+THE+SUPREME+LOKI" alt="Typing SVG" /></a>
