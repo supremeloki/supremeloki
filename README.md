@@ -1,4 +1,4 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Monoton&pause=1000&background=FF141400&width=435&lines=This+Is+The+God+Of+Mischief+%7C+THE+SUPREME+LOKI" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Monoton&pause=50&background=FF141400&center=true&vCenter=true&multiline=true&repeat=false&width=435&height=100&lines=This+Is+The+God+Of+Mischief;THE+SUPREME+LOKI;M.K.XVIII" alt="Typing SVG" /></a>
 
 <picture data-importer="pacman">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/supremeloki/supremeloki/pacman-output/pacman-contribution-graph-dark.svg?game=pacman">
@@ -25,3 +25,7 @@
 ![](https://img.shields.io/badge/Agents-7E57C2?style=for-the-badge&logo=openai&logoColor=white)
 ![](https://img.shields.io/badge/Persian_NLP-009639?style=for-the-badge&logo=wikipedia&logoColor=white)
 ![](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+###
+
+<img align="center" alt="SL/O-01" width="100%" src="https://raw.githubusercontent.com/supremeloki/supremeloki/main/assets/footer.svg">
