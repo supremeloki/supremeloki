@@ -13,25 +13,27 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: fetch stats card
+      - name: fetch cards with retries
         run: |
-          curl -sL "https://github-readme-stats.vercel.app/api?username=supremeloki&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" -o stats.svg
-          sleep 3
-          curl -sL "https://github-readme-stats.vercel.app/api/top-langs/?username=supremeloki&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" -o langs.svg
-          curl -sL "https://github-readme-streak-stats.herokuapp.com/?user=supremeloki&theme=dracula&hide_border=false" -o streak.svg
-      - name: validate svgs
-        run: |
-          for f in stats.svg langs.svg streak.svg; do
-            head -c 200 "$f" | grep -qi "<svg" || { echo "$f invalid"; cat "$f" | head -5; exit 1; }
-          done
-      - name: push cards
+          fetch() {
+            local url="$1" out="$2"
+            for i in 1 2 3 4 5; do
+              curl -sfL "$url" -o "$out" && head -c 200 "$out" | grep -qi "<svg" && return 0
+              echo "attempt $i failed for $out"; sleep 8
+            done
+            return 1
+          }
+          fetch "https://github-readme-stats.vercel.app/api?username=supremeloki&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&theme=dracula&locale=en&hide_border=false" stats.svg
+          fetch "https://github-readme-stats.vercel.app/api/top-langs/?username=supremeloki&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" langs.svg
+          fetch "https://github-readme-streak-stats.herokuapp.com/?user=supremeloki&theme=dracula&hide_border=false" streak.svg || true
+      - name: publish cards
         run: |
           mkdir -p stats-output languages-output streak-output
           cp stats.svg stats-output/stats.svg
           cp langs.svg languages-output/languages.svg
-          cp streak.svg streak-output/streak.svg
+          [ -f streak.svg ] && cp streak.svg streak-output/streak.svg || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add -A
           git commit -m "chore: refresh stat cards" || exit 0
-          git push origin HEAD:pacman-output --force
+          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/supremeloki/supremeloki.git" HEAD:stats-output
