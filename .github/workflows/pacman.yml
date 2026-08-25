@@ -19,7 +19,8 @@ jobs:
       - name: publish to pacman-output branch
         run: |
           mkdir -p out
-          find . -maxdepth 1 -name "*.svg" -exec cp {} out/ \; || true
+          cp dist/pacman-contribution-graph.svg out/ 2>/dev/null || true
+          cp dist/pacman-contribution-graph-dark.svg out/ 2>/dev/null || true
           ls -la out/
           cd out
           git init -q -b main
