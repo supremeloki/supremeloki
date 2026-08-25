@@ -1,0 +1,33 @@
+name: generate snake animation
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: supremeloki
+          outputs: |
+            dist/snake.svg?palette=github-dark
+            dist/snake-light.svg?palette=github-light
+      - name: publish to snake-output branch
+        run: |
+          mkdir -p out
+          cp dist/snake.svg out/ 2>/dev/null || true
+          cp dist/snake-light.svg out/snake.svg 2>/dev/null || true
+          ls -la out/
+          cd out
+          git init -q -b main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: refresh snake" || exit 0
+          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/supremeloki/supremeloki.git" main:snake-output
