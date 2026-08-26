@@ -8,11 +8,11 @@
       <stop offset="100%" stop-color="#bd93f9" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="60" fill="#0d1117"/>
+  <rect width="1200" height="60" fill="#ffffff"/>
   <line x1="0" y1="28" x2="1200" y2="28" stroke="url(#g)" stroke-width="1.5"/>
   <circle cx="600" cy="28" r="4" fill="#ffb86c">
     <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite"/>
   </circle>
   <text x="600" y="52" text-anchor="middle" font-family="monospace" font-size="11"
-        fill="#6272a4">THE SUPREME LOKI — M.K.XVIII</text>
+        fill="#57606a">THE SUPREME LOKI — M.K.XVIII</text>
 </svg>
