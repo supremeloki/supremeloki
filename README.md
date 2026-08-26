@@ -9,21 +9,4 @@
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=supremeloki&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages"/>
 </div>
 
-###
-
-<div align="center">
-![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![](https://img.shields.io/badge/LLM-Ollama-black?style=for-the-badge&logo=meta&logoColor=white)
-![](https://img.shields.io/badge/RAG-Pipeline-orange?style=for-the-badge&logo=databricks&logoColor=white)
-![](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![](https://img.shields.io/badge/NL2SQL-CC2927?style=for-the-badge&logo=mysql&logoColor=white)
-![](https://img.shields.io/badge/DuckDB-DDF000?style=for-the-badge&logo=duckdb&logoColor=black)
-![](https://img.shields.io/badge/Vector_Search-4285F4?style=for-the-badge&logo=googlesearch&logoColor=white)
-![](https://img.shields.io/badge/Agents-7E57C2?style=for-the-badge&logo=openai&logoColor=white)
-![](https://img.shields.io/badge/Persian_NLP-009639?style=for-the-badge&logo=wikipedia&logoColor=white)
-![](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-</div>
-
-###
-
 <img align="center" width="100%" alt="SL/O-01" src="https://raw.githubusercontent.com/supremeloki/supremeloki/main/assets/footer.svg">
