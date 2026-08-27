@@ -9,12 +9,10 @@
 <img src="https://img.shields.io/badge/LLM-Ollama-black?style=for-the-badge&logo=ollama&logoColor=white" alt="LLM"/>&nbsp;
 <img src="https://img.shields.io/badge/RAG-Pipeline-orange?style=for-the-badge&logo=docusign&logoColor=white" alt="RAG"/>&nbsp;
 <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>&nbsp;
-<img src="https://img.shields.io/badge/NL2SQL-CC2927?style=for-the-badge&logo=mysql&logoColor=white" alt="NL2SQL"/>&nbsp;
 <img src="https://img.shields.io/badge/DuckDB-DDF000?style=for-the-badge&logo=duckdb&logoColor=black" alt="DuckDB"/>&nbsp;
 <img src="https://img.shields.io/badge/Vector_Search-4285F4?style=for-the-badge&logo=qdrant&logoColor=white" alt="Vector Search"/>&nbsp;
 <img src="https://img.shields.io/badge/Agents-7E57C2?style=for-the-badge&logo=openai&logoColor=white" alt="Agents"/>&nbsp;
 <img src="https://img.shields.io/badge/Persian_NLP-009639?style=for-the-badge&logo=wikipedia&logoColor=white" alt="Persian NLP"/>&nbsp;
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
 </div>
 
 ###
